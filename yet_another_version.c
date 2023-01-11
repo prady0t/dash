@@ -9,7 +9,10 @@
 #include <string.h>
 #include <stdlib.h>
 
-
+void init();
+void builtin_functions();
+void execute();
+void looper();
 
 char* command;
 //char* argument_list[];
@@ -44,7 +47,7 @@ char** parse(char* input)
     while(inputed != NULL)
     {
         arguments[position] = inputed;
-        printf("%s",inputed);
+        //printf("%s",arguments[position]);
         position++;
         
         inputed = strtok(NULL , " ");
@@ -59,15 +62,15 @@ char** parse(char* input)
 //      parse("ls -l");
 // }
 
+
 int main() {
     while(1)
     {
         
-    printf("\033[1;33m");
+    printf("\033[1;32;40m");//Green \033[1;32m
      command = input();
-    char* argument_list[1000] = {NULL};
-    *argument_list = parse(command);
-     
+    char** argument_list = parse(command);
+    
 
     if (fork() == 0) {
          
@@ -91,3 +94,4 @@ int main() {
 
     return 0;
  }
+
