@@ -20,3 +20,6 @@ git clone https://github.com/pradyotRanjan/dash
 gcc dash-shell.c
 ```
 - Created out file can be run in terminal
+```js
+./a.out
+```
