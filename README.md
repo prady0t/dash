@@ -1,4 +1,4 @@
-                                                 
+![Dash logo](https://github.com/pradyotRanjan/dash/raw/main/DASH%20LOGO.png)                                                 
                                                                      
                
                                                           
