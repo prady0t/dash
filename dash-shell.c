@@ -23,9 +23,6 @@ void exit_shell()
 void about()
 {
     system("cat banner.txt");
-    printf("\n");
-    printf("Simple command line terminal emulator.");
-    
 }
 
 void cd(char** cmd) 
